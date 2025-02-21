@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.samp.customermanagement.ui.customer.CustomerListFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_customers" />
+
+    <fragment
+        android:id="@+id/nav_reflow"
+        android:name="com.samp.customermanagement.ui.reflow.ReflowFragment"
+        android:label="@string/menu_reflow"
+        tools:layout="@layout/fragment_reflow" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.samp.customermanagement.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.samp.customermanagement.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/btnAddCustomer"
+        android:name="com.samp.customermanagement.ui.customer.AddCustomerFragment"
+        android:label="@string/menu_add_customer"
+        tools:layout="@layout/fragment_addcustomer" />
+
+    <fragment
+        android:id="@+id/btnViewCustomer"
+        android:name="com.samp.customermanagement.ui.customer.ViewCustomerFragment"
+        android:label="@string/menu_view_customer"
+        tools:layout="@layout/fragment_detailcustomer" />
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.samp.customermanagement.ui.information.InfoFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_infomation" />
+</navigation>
